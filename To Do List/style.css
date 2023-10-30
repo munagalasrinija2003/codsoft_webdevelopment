@@ -1,0 +1,177 @@
+body{
+    background-image: url(https://img.freepik.com/free-photo/nice-business-desk-black-background_24972-1177.jpg?w=996&t=st=1696772367~exp=1696772967~hmac=e2c5985d6715d47dcc7529fdf01c09d0adb0a634e92122bc74624180f6bcf312);
+    background-size: cover;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color:wheat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin-top: -15%;
+    margin-left: 10%;
+  }
+  .waviy {
+    position: relative;
+  }
+  .waviy span {
+    position: relative;
+    display: inline-block;
+    font-size: 40px;
+    color:wheat;
+    text-transform: uppercase;
+    animation: flip 2s infinite;
+    animation-delay: calc(.2s * var(--i))
+  }
+  @keyframes flip {
+    0%,80% {
+      transform: rotateY(360deg) 
+    }
+  }
+  *,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    
+}
+.container{
+    width: 40%;
+    margin-left: 10%;
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    min-width: 450px;
+    position: absolute;
+    min-height: 100px;
+    transform: translate(-50%,-50%);
+    
+
+   
+}
+
+.glass{
+    background: linear-gradient(
+      135deg, 
+     rgba(197, 205, 211, 0.621) ,
+       rgba(112, 150, 232, 0.07),
+      rgba(51, 0, 255, 0)
+     
+     
+    );
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(10px);
+
+    /* border: 1px solid rgba(225, 225, 225, 0.18); */
+    box-shadow: 0px 8px 32px 0 rgba(0, 0, 0, 0.17);
+  }
+  .glass:hover{
+    border: 2px solid white;
+  }
+  
+.container:hover{
+    box-shadow: wheat;
+    opacity:1.0;
+}
+#newtask{
+    position: relative;
+    padding: 30px 20px;
+}
+#newtask input{
+    width: 75%;
+    height: 45px;
+    padding: 12px;
+    color:purple;
+    font-weight: 500;
+    position: relative;
+    border-radius: 5px;
+    font-family: 'Poppins',sans-serif;
+    font-size: 15px;
+    border: 2px solid black;
+    background-color: wheat;
+    opacity:1.0;
+}
+#newtask input:hover{
+    box-shadow:0px 0px 20px 5px wheat;
+    border: 2px solid purple;
+
+}
+#newtask button{
+    position: relative;
+    float: right;
+    font-weight: 500;
+    font-size: 16px;
+    background-color:rgb(86, 86, 196);
+    border: none;
+    color: wheat;
+    cursor: pointer;
+    outline: none;
+    width: 20%;
+    height: 45px;
+    border-radius: 5px;
+    font-family: 'Poppins',sans-serif;
+    
+}
+#newtask button:hover{
+    box-shadow:0px 0px 20px 5px blue;
+
+}
+#tasks {
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+    
+    padding: 30px 20px;
+    margin-top: 10px;
+
+}
+
+.task {
+    border-radius: 5px;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid wheat;
+    cursor: pointer;
+    
+    height: 50px;
+    margin-bottom: 8px;
+    padding: 5px 10px;
+    display: flex;
+    color:wheat;
+ 
+}
+.task span {
+    font-family: 'Poppins',sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+.task button {
+    background-color: #6583e5;
+   background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4Rwl09dg09j4g73XsyTkTfb108zKRiWx64o0UmRnSrArJYocFVhNy44uQpcPOBhuu3iM&usqp=CAU);
+  background-size: cover;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    height: 100%;
+    width: 40px;
+    border-radius: 5px;
+
+}
+.task button:hover{
+ opacity:0.5;
+}
+.completed{
+    text-decoration: line-through;
+    color:brown;
+   
+}
